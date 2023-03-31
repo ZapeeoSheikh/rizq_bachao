@@ -3,6 +3,8 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:rizq_bachao/Ui%20Kit/ui.dart';
 
+import '../BottomNavigationBar/bottomNavBar.dart';
+
 class ChooseIdentity extends StatefulWidget {
   const ChooseIdentity({Key? key}) : super(key: key);
 
@@ -102,6 +104,8 @@ class _ChooseIdentityState extends State<ChooseIdentity> {
                     onTap: () {
                       user = 1;
                       print(user);
+                      Navigator.pushReplacementNamed(context, "/bottomNav");
+                      // Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => BottomNavBar()));
                     },
                     child: Container(
                       height: 90.h,

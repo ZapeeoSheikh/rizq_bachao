@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:rizq_bachao/BottomNavigationBar/bottomNavBar.dart';
 import 'package:rizq_bachao/Pages/signup.dart';
 
 void main() {
@@ -19,6 +20,10 @@ class MyApp extends StatelessWidget {
         builder: (context, child) {
           return MaterialApp(
             debugShowCheckedModeBanner: false,
+            routes: {
+              "/bottomNav": (_) => new BottomNavBar(),
+
+            },
             theme: ThemeData(
 
                 // primarySwatch: Colors.blue,

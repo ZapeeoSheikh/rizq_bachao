@@ -78,60 +78,171 @@ class _ForumState extends State<Forum> {
       ),
       body: SingleChildScrollView(
         child: Padding(
-          padding: EdgeInsets.all(25),
+          padding: EdgeInsets.all(10),
           child: Column(
             children: [
+              for(int i = 0; i <= 20; i++)
               Row(
                 children: [
                   Expanded(
                     child: Container(
                       child: Card(
-                        child: Row(
+                        color: MyColor.cardBack,
+                        elevation: 10,
+                        shape: RoundedRectangleBorder(
+                            borderRadius:
+                                BorderRadius.all(Radius.circular(20))),
+                        child: Column(
                           children: [
-                            Row(
-                              children: [
-                                ClipRRect(
-                                  borderRadius: BorderRadius.all(Radius.circular(100)),
-                                  child: Image(
-                                    image:
-                                    AssetImage("assets/Vector/avatar.png"),
-                                    width: MediaQuery.of(context).size.width * .27,
-                                    height: 80.sp,
-                                  ),
-                                ),
-                                SizedBox(
-                                  width: 14.w,
-                                ),
-                                Row(
-                                  children: [
-                                    Column(
-                                      children: [
-                                        Container(
-                                          width:
-                                          MediaQuery.of(context).size.width / 1.3,
-                                          child: Text(
-                                            "Sara posted in Spreading The world",
-                                            style: GoogleFonts.roboto(
-                                              fontSize: 16.sp,
-                                              color: MyColor.textColor1,
-                                            ),
+                            Padding(
+                              padding: const EdgeInsets.all(10.0),
+                              child: Column(
+                                children: [
+                                  Row(
+                                    children: [
+                                      CircleAvatar(
+                                        backgroundImage: AssetImage(
+                                            "assets/Vector/avatar.png"),
+                                        radius: 30.sp,
+                                      ),
+                                      SizedBox(
+                                        width: 14.w,
+                                      ),
+                                      Row(
+                                        children: [
+                                          Column(
+                                            crossAxisAlignment:
+                                                CrossAxisAlignment.start,
+                                            children: [
+                                              Row(
+                                                children: [
+                                                  Container(
+                                                    width:
+                                                        MediaQuery.of(context)
+                                                                .size
+                                                                .width /
+                                                            2.5,
+                                                    child: Text(
+                                                      "Sara posted in Spreading the world",
+                                                      style: GoogleFonts.roboto(
+                                                        fontSize: 16.sp,
+                                                        color:
+                                                            MyColor.textColor1,
+                                                      ),
+                                                    ),
+                                                  ),
+                                                  SizedBox(
+                                                    width: 70.w,
+                                                  ),
+                                                  Icon(
+                                                    Icons.flag_outlined,
+                                                    size: 30,
+                                                    color: MyColor.inActive,
+                                                  ),
+                                                ],
+                                              ),
+                                              SizedBox(
+                                                height: 10.h,
+                                              ),
+                                              Row(
+                                                children: [
+                                                  Icon(
+                                                    Icons.access_time_outlined,
+                                                    size: 15,
+                                                    color: MyColor.inActive,
+                                                  ),
+                                                  SizedBox(
+                                                    width: 10.h,
+                                                  ),
+                                                  Text(
+                                                    "41 minutes ago",
+                                                    style: GoogleFonts.roboto(
+                                                      fontSize: 14.sp,
+                                                      color: MyColor.inActive,
+                                                    ),
+                                                  ),
+                                                ],
+                                              )
+                                            ],
                                           ),
+                                        ],
+                                      ),
+                                    ],
+                                  ),
+                                  SizedBox(
+                                    height: 10.w,
+                                  ),
+                                  Padding(
+                                    padding: const EdgeInsets.all(8.0),
+                                    child: RichText(
+                                      text: TextSpan(
+                                        text:
+                                            'With all the post’s complaining about the sale section there’s just going to free stuff & nothing to buy ',
+                                        style: GoogleFonts.roboto(
+                                          fontSize: 16.sp,
+                                          color: MyColor.iconActive,
                                         ),
-                                        Row(
-                                          children: [
-                                            Icon(Icons.access_time_outlined, size: 10, color: MyColor.inActive,)
-                                          ],
-                                        )
-                                      ],
+                                      ),
+                                    ),
+                                  ),
+                                  SizedBox(
+                                    height: 20.w,
+                                  ),
+                                ],
+                              ),
+                            ),
+                            Container(
+                              height: 60.h,
+                              decoration: BoxDecoration(
+                                  color: MyColor.cardBottom,
+                                  borderRadius: BorderRadius.only(
+                                      bottomLeft: Radius.circular(20),
+                                      bottomRight: Radius.circular(20))),
+                              child: Padding(
+                                padding: const EdgeInsets.symmetric(
+                                    horizontal: 10.0),
+                                child: Row(
+                                  mainAxisAlignment: MainAxisAlignment.end,
+                                  children: [
+                                    Image(
+                                      image: AssetImage(
+                                          "assets/icons/comment.png"),
+                                      width: 30,
+                                      height: 30,
+                                    ),
+                                    SizedBox(
+                                      width: 20,
+                                    ),
+                                    Text(
+                                      "2 Comments",
+                                      style: GoogleFonts.roboto(
+                                        fontSize: 18.sp,
+                                        color: MyColor.inActive,
+                                      ),
+                                    ),
+                                    SizedBox(
+                                      width: 20,
+                                    ),
+                                    Image(
+                                      image:
+                                          AssetImage("assets/icons/heart.png"),
+                                      width: 30,
+                                      height: 30,
+                                    ),
+                                    SizedBox(
+                                      width: 20,
+                                    ),
+                                    Text(
+                                      "2 likes",
+                                      style: GoogleFonts.roboto(
+                                        fontSize: 18.sp,
+                                        color: MyColor.inActive,
+                                      ),
                                     ),
                                   ],
                                 ),
-                              ],
-                            ),
-                            SizedBox(
-                              width: 10.w,
-                            ),
-
+                              ),
+                            )
                           ],
                         ),
                       ),

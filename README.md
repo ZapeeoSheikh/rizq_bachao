@@ -1,3 +1,9 @@
+# About Project
+[![Watch the video](assets/Vector/thumbnail2.png)](https://youtu.be/46ffUo0EiQk)
+
+# Working Demo
+[![Watch the video](assets/Vector/Thumbnail.png)](https://youtu.be/46ffUo0EiQk)
+
 # Flutter Project
 
 This is a Flutter project for creating a mobile application. Flutter is an open-source UI software development kit created by Google. It is used to develop applications for Android, iOS, Linux, Mac, Windows, Google Fuchsia, and the web.
@@ -35,10 +41,4 @@ This is a Flutter project for creating a mobile application. Flutter is an open-
 ## Troubleshooting
 
 If you encounter any errors while building or deploying the application, you can refer to the [Flutter documentation](https://flutter.dev/docs) or [Stack Overflow](https://stackoverflow.com/) for help.
-
-# About Project
-[![Watch the video](https://i.imgur.com/vKb2F1B.png)](https://youtu.be/46ffUo0EiQk)
-
-# Working Demo
-[![Watch the video](https://i.imgur.com/vKb2F1B.png)](https://youtu.be/46ffUo0EiQk)
 

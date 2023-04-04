@@ -1,7 +1,4 @@
 # About Project
-[![Watch the video](assets/Vector/thumbnail2.png)](https://youtu.be/46ffUo0EiQk)
-
-# Working Demo
 [![Watch the video](assets/Vector/Thumbnail.png)](https://youtu.be/46ffUo0EiQk)
 
 # Flutter Project
